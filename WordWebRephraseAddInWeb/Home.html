@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Word Add-In with Commands Sample</title>
+
+    <script src="Scripts/jquery-3.5.0.js" type="text/javascript"></script>
+    <script src="Scripts/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:  -->
+    <!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <script src="Home.js" type="text/javascript"></script>
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/Button.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/MessageBanner.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- For Office UI Fabric Core, go to https://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css">
+
+    <!-- To enable the offline use of Office UI Fabric Core, use: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+</head>
+
+    <!-- Office UI Fabric JS and it's components are no longer actively supported. Please see https://aka.ms/PnP-OfficeFabricReact for recommended Patterns and Practices -->
+    <!-- <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css"> -->
+
+<body class="ms-Fabric" dir="ltr">
+    <div id="content-main">
+        <div class="padding">
+            <br />
+            <!-- <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight">Rephrase AI</p>
+    <br /><br />-->
+            <div class="ms-font-xl ms-fontColor-neutralTertiary" id="select_text_title">Select text to rephrase</div>
+            <p class="ms-font-m-plus ms-fontColor-neutralTertiary" id="template-description"></p>
+            <p class="ms-font-m-plus ms-fontColor-neutralTertiary" id="RephrasingTitle">Rephrasing Options</p>
+            <p>
+                <button class="Button Button--suggestion" id="rephrase-one-button" style='width:auto; height:auto;'>
+                    <span class="Button-label" id="button-rephrase1-text">Rephrase suggestion 1...thinking...</span>
+                    <span class="Button-description" id="button-rephrase1-desc"></span>
+                </button>
+            </p>
+            <p>
+                <button class="Button Button--suggestion" id="rephrase-two-button" style='width:auto; height:auto;' ">
+                    <span class="Button-label" id="button-rephrase2-text">Rephrase suggestion 2...thinking...</span>
+                    <span class="Button-description" id="button-rephrase2-desc"></span>
+                </button>
+            </p>
+            <br /><br />
+
+            <button class="Button Button--primary" id="highlight-button">
+                <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+                <span class="Button-label" id="button-text"></span>
+                <span class="Button-description" id="button-desc">Get More</span>
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ms-Grid ms-bgColor-themeSecondary">
+            <div class="ms-Grid-row">
+                <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg12"> <div class="ms-font-xl ms-fontColor-white">Author AI</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Component used for displaying notifications -->
+            <div class="MessageBanner" id="notification-popup">
+                <div class="MessageBanner-content">
+                    <div class="MessageBanner-text">
+                        <div class="MessageBanner-clipper">
+                            <div class="ms-font-m-plus ms-fontWeight-semibold" id="notification-header"></div>
+                            <div class="ms-font-m ms-fontWeight-semilight" id="notification-body"></div>
+                        </div>
+                    </div>
+                    <button class="MessageBanner-expand" style="display:none"><i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
+                    <div class="MessageBanner-action"></div>
+                </div>
+                <button class="MessageBanner-close"> <i class="ms-Icon ms-Icon--ChromeClose"></i> </button>
+            </div>
+</body>
+</html>
