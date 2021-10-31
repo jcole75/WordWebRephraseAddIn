@@ -3,4 +3,6 @@
 
 This Add-In for Microsoft Word is written to use a fine-tuned GPT-3 model for rephrasing a selected sentence.  It returns the top two results.  Initially, the Curie engine was used, but this is more expensive.  The Ada engine produced inferior results, but the Babbage engine worked quite well.  
 
-Please see the Jupyter Notebook for some guidance on training your own model.
+*Please see the Jupyter Notebook for some guidance on training your own model.  Please note, it is just for reference so you can see the commands. Only the final data for fine-tuning is included.*
+
+The data file for fine-tuning is called: output_prepared_10_16_21_filtered.jsonl.
