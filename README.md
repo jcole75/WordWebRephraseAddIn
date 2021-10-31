@@ -5,4 +5,8 @@ This Add-In for Microsoft Word is written to use a fine-tuned GPT-3 model for re
 
 *Please see the Jupyter Notebook for some guidance on training your own model.  Please note, it is just for reference so you can see the commands. Only the final data for fine-tuning is included.*
 
-The data file for fine-tuning is called: output_prepared_10_16_21_filtered.jsonl.
+The data file for fine-tuning the Curie model is called: output_prepared_10_6_21_filtered.jsonl.
+
+The final data file used for fine-tuning the Babbage engine, which was the most affordable and functional model is: output_10_16_21_filtered.jsonl.
+
+# Edit Home.js to add your OpenAI API Key and Fine-Tuned Model ID
