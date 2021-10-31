@@ -13,6 +13,7 @@ The final data file used for fine-tuning the Babbage engine, which was the most 
 
 You need to obtain your OpenAI API Key and a Fine-Tuned Model ID after training a model.  See the [Jupyter Notebook](Training%20Sentence%20Rephrasing-GitHub.ipynb) for the history of how I did it.  You can skip to the end to train a model on the Babbage engine, which was the best in terms of price of operation and model performance.
 
+*Install Visual Studio. This project used VS 2019.*
 *Edit Home.js to add your OpenAI API Key and Fine-Tuned Model ID*
 
 # Screenshot
