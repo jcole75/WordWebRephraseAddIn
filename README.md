@@ -9,4 +9,12 @@ The data file for fine-tuning the Curie model is called: output_prepared_10_6_21
 
 The final data file used for fine-tuning the Babbage engine, which was the most affordable and functional model is: output_10_16_21_filtered.jsonl.
 
-# Edit Home.js to add your OpenAI API Key and Fine-Tuned Model ID
+# Installation
+
+You need to obtain your OpenAI API Key and a Fine-Tuned Model ID after training a model.  See the [Jupyter Notebook](Training%20Sentence%20Rephrasing-GitHub.ipynb) for the history of how I did it.  You can skip to the end to train a model on the Babbage engine, which was the best in terms of price of operation and model performance.
+
+*Edit Home.js to add your OpenAI API Key and Fine-Tuned Model ID*
+
+# Screenshot
+
+![Screenshot of the Add-In running in MS Word](rephrase_screenshot.png?raw=true "Screenshot")
